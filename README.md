@@ -2,7 +2,7 @@
 
 Simple WhatsApp Bot
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nurutomo/wabot-aq)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rescenic/wabot-rsc)
 
 ## FOR TERMUX/UBUNTU/SSH USER
 
@@ -12,8 +12,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/Nurutomo/wabot-aq
-cd wabot-aq
+git clone https://github.com/rescenic/wabot-rsc
+cd wabot-rsc
 npm install
 npm update
 ```
@@ -29,7 +29,8 @@ proot-distro install ubuntu
 echo "proot-distro login ubuntu" > $PREFIX/bin/ubuntu
 ubuntu
 ```
----------
+
+---
 
 [ INSTALLING REQUIRED PACKAGES ]
 
@@ -39,7 +40,7 @@ apt update && apt full-upgrade
 apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev dbus-x11 ffmpeg2theora ffmpegfs ffmpegthumbnailer ffmpegthumbnailer-dbg ffmpegthumbs libavcodec-dev libavcodec-extra libavcodec-extra58 libavdevice-dev libavdevice58 libavfilter-dev libavfilter-extra libavfilter-extra7 libavformat-dev libavformat58 libavifile-0.7-bin libavifile-0.7-common libavifile-0.7c2 libavresample-dev libavresample4 libavutil-dev libavutil56 libpostproc-dev libpostproc55 graphicsmagick graphicsmagick-dbg graphicsmagick-imagemagick-compat graphicsmagick-libmagick-dev-compat groff imagemagick-6.q16hdri imagemagick-common libchart-gnuplot-perl libgraphics-magick-perl libgraphicsmagick++-q16-12 libgraphicsmagick++1-dev
 ```
 
----------
+---
 
 [ INSTALLING NODEJS & WABOT-AQ ]
 
@@ -47,29 +48,29 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/Nurutomo/wabot-aq
+git clone https://github.com/rescenic/wabot-rsc
 cd wabot-aq
 npm install
 npm update
 ```
 
----------
+---
 
 ## FOR WINDOWS/VPS/RDP USER
 
-* Download And Install Git [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
+-   Download And Install Git [`Click Here`](https://git-scm.com/downloads)
+-   Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
+-   Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
+-   Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/Nurutomo/wabot-aq
+git clone https://github.com/rescenic/wabot-rsc
 cd wabot-aq
 npm install
 npm update
 ```
 
----------
+---
 
 ## Run
 
@@ -77,7 +78,7 @@ npm update
 node .
 ```
 
----------
+---
 
 ## Arguments `node . [--options] [<session name>]`
 
@@ -87,8 +88,8 @@ Use another session with another name, default is ```session.data.json```
 
 ### `--prefix <prefixes>`
 
-* `prefixes` are seperated by each character
-Set prefix
+-   `prefixes` are seperated by each character
+    Set prefix
 
 ### `--server`
 
@@ -96,7 +97,7 @@ Used for [heroku](https://heroku.com/) or scan through website
 
 ### `--db <json-server-url>`
 
-Use external db instead of local db, 
+Use external db instead of local db,
 Example Server `https://json-server.nurutomo.repl.co/`
 
 Code: `https://repl.it/@Nurutomo/json-server`
@@ -127,6 +128,22 @@ Content-Type: application/json
 
 If small qr unicode doesn't support
 
+<<<<<<< refs/remotes/origin/master
+||||||| ancestor
+### `--restrict`
+
+Enables restricted plugins (which can lead your number to be **banned** if used too often)
+
+* Group Administration `add, kick`
+
+=======
+### `--restrict`
+
+Enables restricted plugins (which can lead your number to be **banned** if used too often)
+
+-   Group Administration `add, kick`
+
+>>>>>>> Update Agustus 2021
 ### `--img`
 
 Enable image inspector through terminal
@@ -138,15 +155,16 @@ Enable image inspector through terminal
 ### `--trace`
 
 ```js
-conn.logger.level = 'trace'
+conn.logger.level = "trace";
 ```
 
 ### `--debug`
 
 ```js
-conn.logger.level = 'debug'
+conn.logger.level = "debug";
 ```
 
+<<<<<<< refs/remotes/origin/master
 ## Settings
 
 Now set using switch [enable.js](https://github.com/Nurutomo/wabot-aq/blob/master/plugins/enable.js), among others are
@@ -168,7 +186,21 @@ jadibot: false,
 ----|----|----|----
 [XTEAM](https://api.xteam.xyz/) | [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Ftwrr](https://github.com/Ftwrr)
 Powered by XTEAM | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
+||||||| ancestor
+---------
 
+<a href="https://api.xteam.xyz"><img src="https://i.ibb.co/7j0vtwz/xlogo.png" width="100" height="100"></a> | [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![Ftwrr](https://github.com/Ftwrr.png?size=100)](https://github.com/Ftwrr) 
+----|----|----|----
+[XTEAM](https://api.xteam.xyz/) | [Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Ftwrr](https://github.com/Ftwrr)
+Powered by XTEAM | Author / Creator | Most Active Contributor | 2nd Most Active Contributor
+=======
+---
+>>>>>>> Update Agustus 2021
+
+| <a href="https://api.xteam.xyz"><img src="https://i.ibb.co/7j0vtwz/xlogo.png" width="100" height="100"></a> | [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25) | [![Ftwrr](https://github.com/Ftwrr.png?size=100)](https://github.com/Ftwrr) |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [XTEAM](https://api.xteam.xyz/)                                                                             | [Nurutomo](https://github.com/Nurutomo)                                              | [Ariffb](https://github.com/ariffb25)                                              | [Ftwrr](https://github.com/Ftwrr)                                           |
+| Powered by XTEAM                                                                                            | Author / Creator                                                                     | Most Active Contributor                                                            | 2nd Most Active Contributor                                                 |
 
 NOTE: This project will not maintained after `27 June 2021`, that means no update. Feel free to anyone to continue this project :)
 
